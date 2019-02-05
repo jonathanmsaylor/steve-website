@@ -9,7 +9,19 @@ html, body {
     padding: 0px;
     overflow-x: hidden; 
 }
-
+footer {
+    background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
+    padding: 8%;
+}
+#homecontainer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: bauhus;
+    font-size: 20px;
+}
+.homerows{
+    padding: 15px;
+}
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 1px) {

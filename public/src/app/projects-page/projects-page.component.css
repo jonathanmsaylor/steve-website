@@ -5,7 +5,10 @@ html, body {
     padding: 0px;
     overflow-x: hidden; 
 }
-
+footer {
+    background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
+    padding: 8%;
+}
 .navbar.navbar-1 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
 }
