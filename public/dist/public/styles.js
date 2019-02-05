@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
-/***/ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./src/styles.css":
-/*!*****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./src/styles.css ***!
-  \*****************************************************************************************************************************************************************/
+/***/ "../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src/index.js?!./src/styles.css":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!./src/styles.css ***!
+  \*******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -11,10 +11,10 @@ module.exports = [[module.i, "/* You can add global styles to this file, and als
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/addStyles.js":
-/*!****************************************************!*\
-  !*** ./node_modules/style-loader/lib/addStyles.js ***!
-  \****************************************************/
+/***/ "../node_modules/style-loader/lib/addStyles.js":
+/*!*****************************************************!*\
+  !*** ../node_modules/style-loader/lib/addStyles.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -84,7 +84,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+var	fixUrls = __webpack_require__(/*! ./urls */ "../node_modules/style-loader/lib/urls.js");
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -272,9 +272,7 @@ function addStyle (obj, options) {
 
 	// If a transform function was defined, run it on the css
 	if (options.transform && obj.css) {
-	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css) 
-		 : options.transform.default(obj.css);
+	    result = options.transform(obj.css);
 
 	    if (result) {
 	    	// If transform returns a value, use that instead of the original css.
@@ -420,10 +418,10 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/urls.js":
-/*!***********************************************!*\
-  !*** ./node_modules/style-loader/lib/urls.js ***!
-  \***********************************************/
+/***/ "../node_modules/style-loader/lib/urls.js":
+/*!************************************************!*\
+  !*** ../node_modules/style-loader/lib/urls.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -528,7 +526,7 @@ module.exports = function (css) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!./styles.css */ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./src/styles.css");
+var content = __webpack_require__(/*! !../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../../node_modules/postcss-loader/src??embedded!./styles.css */ "../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src/index.js?!./src/styles.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -542,7 +540,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "../node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -557,7 +555,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Volumes/JS 1/projects/stevewebsite/public/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Volumes/JS/projects/steveWebsite/public/src/styles.css */"./src/styles.css");
 
 
 /***/ })
