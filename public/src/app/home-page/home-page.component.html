@@ -23,8 +23,8 @@
 
 <body>
   <header>
-    <div class="container" style="margin: 40px; width: auto;">
-      <div class="row" style="text-align: center;">
+    <div class="container" id="headerContainer">
+      <div class="row" style="text-align: center; justify-content: center;">
         <div class="col-sm-6">
           <div class="row" style="justify-content: center;">
             <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" id="logobox">
+            <div class="col-sm-4">
               <div data-aos="fade" data-aos-offset="200" data-aos-delay="1800" data-aos-duration="2000" data-aos-easing="ease-in-out">
                 <img class="logo" src="http://www.mafilm.org/wp-content/uploads/2018/05/Iatse-800.png">
               </div>
@@ -72,16 +72,58 @@
         </div>
       </div>
     </div>
+
+    <!-- desktop view -->
+    <div class="container-fluid" id="desktopHeader">
+      <div class="row justify-content-center">
+        <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <h1>Steven M. Saylor</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div data-aos="fade" data-aos-offset="200" data-aos-delay="1000" data-aos-duration="2000" data-aos-easing="ease-in-out">
+          <p id="setdesigner">Set Designer</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div data-aos="fade" data-aos-offset="200" data-aos-delay="1400" data-aos-duration="2000" data-aos-easing="ease-in-out">
+          <h3 class="artd">Art Directors Guild Local 800</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="text-align: center;">
+        <div data-aos="fade" data-aos-offset="200" data-aos-delay="1800" data-aos-duration="2000" data-aos-easing="ease-in-out">
+          <img class="logo" src="http://www.mafilm.org/wp-content/uploads/2018/05/Iatse-800.png">
+        </div>
+      </div>
+    </div>
   </header>
+  <div id="desktopButtons" class="col-sm-12">
+    <div class="row">
+      <div class="col-sm-4" style="padding: 5px;">
+        <button class="btn-block shadow-lg" id="buttonpadding">
+          <div routerLink="/projects">Projects</div>
+        </button>
+      </div>
+      <div class="col-sm-4" style="padding: 5px;">
+        <button class="btn-block shadow-lg" id="buttonpadding">
+          <div routerLink="/portfolio">Portfolio</div>
+        </button>
+      </div>
+      <div class="col-sm-4" style="padding: 5px;">
+        <button class="btn-block shadow-lg" id="buttonpadding">
+          <div routerLink="/resume">Resume</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr>
   <div class="container" id="homecontainer">
     <div class="homerows">
-      <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="120" data-aos-duration="1300" data-aos-easing="ease-in-out">
-        <div class="row">
-          <p>Steven has over 25 years in the movie industry and has successfully completed over 70 projects, which include television
-            (over 400 episodes) and features. His past experience have allowed him to bring something different and unique
-            to his Set Designer career. He is well respected in the film industry and highly sought after for his innovative
-            designs and steadfast work ethic.</p>
-        </div>
+      <div class="row">
+        <p>Steven has over 25 years in the movie industry and has successfully completed over 70 projects, which include television
+          (over 400 episodes) and features. His past experience have allowed him to bring something different and unique
+          to his Set Designer career. He is well respected in the film industry and highly sought after for his innovative
+          designs and steadfast work ethic.</p>
       </div>
       <hr>
       <div>
@@ -97,7 +139,7 @@
         <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="120" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div class="row">
             <p>Steven went on to work at a civil engineering firm to expand his knowledge in other areas. These included street
-              and utility design, hillside design and construction and onstruction and earthquake retrofitting. He then obtained
+              and utility design, hillside design and construction and earthquake retrofitting. He then obtained
               his general contracting license from the State of California and began operating his own architectural design
               and construction company. The firm quickly grew to include the managing of employees, enigneers and construction
               crews. Steven's firm successfully designed and completed over 700 projects.
@@ -119,7 +161,7 @@
           <div class="row">
             <p>While at MCA/universal studios Steven took on the role of Damage Assesment Team leader and was trained by the
               State of California in post earthquake damage assessment. After the 1994 Northridge earthquake Steven was deputized
-              by the county of Los Angeles as a building inspector with the purpose of assessing the safet and structural
+              by the county of Los Angeles as a building inspector with the purpose of assessing the safety and structural
               integrity of buildings. A new opportunity arose and Steven joined 20th Century Fox as a project manager. Utilizing
               his knowledge in structure concrete and steel construction. He coordinated projects such as the new Fox Broadcasting
               building (managing the capping of 25 oil wells), a parking structure and the new Crafts building.</p>
@@ -129,15 +171,19 @@
       </div>
     </div>
   </div>
-  <div data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000" data-aos-easing="ease-in">
+  <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in">
     <footer>
-      <p class="txt-railway" style="font-family: bauhus; font-size: 27px; color: black; text-align: center; margin: 0;">- Get In Touch -</p>
+      <hr>
+      <p class="txt-railway">- Get In Touch -</p>
       <div class="row">
-        <div class="col-6">
-          <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb shadow-lg"></a>
+        <div class="col-4">
+          <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb"></a>
         </div>
-        <div class="col-6">
-          <a href="mailto:StevenMSaylor@gmail.com" class="fa fa-google shadow-lg"></a>
+        <div class="col-4">
+          <a href="mailto:StevenMSaylor@gmail.com" class="fa fa-google"></a>
+        </div>
+        <div class="col-4">
+          <a href="tel:661-400-3507" class="fa fa-phone" aria-hidden="true"></a>
         </div>
       </div>
     </footer>

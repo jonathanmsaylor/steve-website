@@ -8,8 +8,8 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 const routes: Routes = [
   { path: '', pathMatch:'full', component: HomePageComponent},
-  {path: 'projects', component: ProjectsPageComponent},
-  {path: 'portfolio', component: PortfolioPageComponent},
+  {path: 'portfolio', component: ProjectsPageComponent},
+  {path: 'projects', component: PortfolioPageComponent},
   {path: 'resume', component: ResumePageComponent},
 ];
 
@@ -18,3 +18,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+// portfolio & projects routes are switched at the moment

@@ -8,6 +8,13 @@ html, body {
 footer {
     background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
     padding: 8%;
+    margin-top: 20%;
+}
+.fa-phone {
+    color: green;
+}
+.txt-railway {
+    font-family: bauhus; font-size: 27px; color: black; text-align: center; margin: 0; margin-top: 20px;
 }
 .navbar.navbar-1 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
@@ -92,4 +99,8 @@ footer {
   color: white;
   font-size: 20px;
 }
+#projects {
+    border: none;
+}
+
 /* * { border: 1px solid red;} */

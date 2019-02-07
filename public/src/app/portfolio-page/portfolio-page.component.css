@@ -8,6 +8,7 @@ html, body {
 footer {
     background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
     padding: 8%;
+    margin-top: 20%;
 }
 .scrolling-wrapper {
   overflow-x: scroll;
@@ -20,6 +21,9 @@ footer {
 }
 .card {
     display: inline-block;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px darkslategrey
   }
 img {
     width: 100%;
@@ -84,7 +88,7 @@ img {
     background: -moz-linear-gradient(left, rgba(254,255,232,1) 0%, rgba(175,132,58,1) 100%);
     background: -webkit-linear-gradient(left, rgba(254,255,232,1) 0%,rgba(175,132,58,1) 100%);
     background: linear-gradient(to right, rgba(254,255,232,1) 0%,rgba(175,132,58,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#af843a',GradientType=1 );   border: 1px solid black; 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#af843a',GradientType=1 ); 
 }
 
 .col-4 {
@@ -105,6 +109,12 @@ img {
 }
 .fa-imdb {
     color: goldenrod;
+}
+.fa-phone {
+    color: green;
+}
+.txt-railway {
+    font-family: bauhus; font-size: 27px; color: black; text-align: center; margin: 0; margin-top: 20px;
 }
 .icon-bar {
   position: fixed;

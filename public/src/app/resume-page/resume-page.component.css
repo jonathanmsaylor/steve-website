@@ -26,6 +26,12 @@ footer {
     background: linear-gradient(to right, rgba(254,255,232,1) 0%,rgba(175,132,58,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#af843a',GradientType=1 );
 }
+.fa-phone {
+    color: green;
+}
+.txt-railway {
+    font-family: bauhus; font-size: 27px; color: black; text-align: center; margin: 0; margin-top: 20px;
+}
 .nav-item {
     font-size: 20px;
     letter-spacing: 5px;

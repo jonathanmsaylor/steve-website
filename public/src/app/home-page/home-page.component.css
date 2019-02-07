@@ -9,22 +9,21 @@ html, body {
     padding: 0px;
     overflow-x: hidden; 
 }
-footer {
-    background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
-    padding: 8%;
-}
-#homecontainer {
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: bauhus;
-    font-size: 20px;
-}
-.homerows{
-    padding: 15px;
-}
+
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 1px) {
+    #desktopHeader {
+        display: none;
+    }
+    #desktopButtons {
+        display: none;
+    }
+    #headerContainer {
+        margin: 40px; 
+        width: auto;
+    }
     #setdesigner {
         justify-content: center;
         font-family: bauhaus;
@@ -40,6 +39,7 @@ footer {
         font-family: bauhaus;
         font-size: 45px;
         color: white;
+        text-align: center;
     }
     .artd {
         font-family: bauhus;
@@ -87,7 +87,6 @@ footer {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  
   .icon-bar a {
     display: block;
     text-align: center;
@@ -96,25 +95,156 @@ footer {
     color: white;
     font-size: 20px;
   }
-  
+  footer {
+    background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
+    padding: 8%;
+}
+#homecontainer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: bauhus;
+    font-size: 20px;
+}
+.homerows{
+    padding: 15px;
+    padding-top: 0;
+}
+.fa-phone {
+    color: green;
+}
+.txt-railway {
+    font-family: bauhus; 
+    font-size: 27px; 
+    color: black; 
+    text-align: center; 
+    margin: 0; 
+    margin-top: 20px;
+}
   /* Small Devices, Tablets */
   
   @media only screen and (min-width: 768px) {
-
-  }
-  
-  /* Medium Devices, Desktops */
-  
-  @media only screen and (min-width: 992px) {
-    .logo {
-        width: 50%;
-        padding: 3px;
+    #desktopHeader {
+        letter-spacing: 10px;
+        text-align: center;
+        display: initial;
     }
+    #headerContainer {
+        display: none;
+    }
+    #desktopButtons {
+        display: initial;
+        padding: 10px; 
+        color: black; 
+        width: 90%;
+        margin: none;
+    }
+    #setdesigner {
+        justify-content: center;
+        letter-spacing: 10px;
+        font-size: 60px;
+        font-family: bauhus;
+    }
+    .logo {
+        width: 70%;
+        padding: 3px;
+        margin: 10px;
+    }
+    h1 {
+        font-family: bauhaus;
+        font-size: 100px;
+        color: white;
+    }
+    .artd {
+        font-family: bauhus;
+        font-size: 40px;
+    }
+    .btn-block {
+        border:none;
+        cursor:pointer;
+        outline:none;
+        font-family: bauhaus;
+        padding: 10px;
+        background: -moz-radial-gradient(center, ellipse cover, rgba(169,3,41,0.81) 0%, rgba(143,2,34,0.89) 44%, rgba(109,0,25,1) 100%);
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(169,3,41,0.81) 0%,rgba(143,2,34,0.89) 44%,rgba(109,0,25,1) 100%);
+        background: radial-gradient(ellipse at center, rgba(169,3,41,0.81) 0%,rgba(143,2,34,0.89) 44%,rgba(109,0,25,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfa90329', endColorstr='#6d0019',GradientType=1 );        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        margin: 10px;
+        border: 2px solid black;
   }
-  
-  /* Large Devices, Wide Screens */
-  
-  @media only screen and (min-width: 1200px) {
-
+  .col-4 {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  .fa {
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 25%;
+    border: 1px solid black;
+    background-color: white;
+  }
+  .fa-imdb {
+      color: goldenrod;
+  }
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  footer {
+    background: linear-gradient(rgba(210, 180, 140, 0.822), rgba(194, 128, 47, 0.048), rgba(210, 180, 140, 0.089));
+    padding: 8%;
+}
+#homecontainer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: bauhus;
+    font-size: 20px;
+}
+#buttonpadding {
+    padding: 30px;
+    font-size: 40px;
+}
+#buttonpadding:hover {
+    padding: 30px;
+    font-size: 50px;
+}
+.homerows{
+    padding: 15px;
+    padding-top: 50px;
+    font-size: 40px;
+}
+.fa-phone {
+    color: green;
+}
+footer {
+    padding: 1%;
+}
+.txt-railway {
+    font-family: bauhus; 
+    font-size: 70px; 
+    color: black; 
+    text-align: center; 
+    margin: 0; 
+    margin-top: 20px;
+    padding: 0px;
+    }
   }
 }
