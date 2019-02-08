@@ -54,17 +54,17 @@
         <div class="col-sm-12" style="padding: 10px; color: black; width: 90%;">
           <div class="row">
             <div class="col-sm-4" style="padding: 5px;">
-              <button class="btn-block shadow-lg">
+              <button class="btn-block shadow-lg" id="mobilebuttonPadding">
                 <div routerLink="/projects">Projects</div>
               </button>
             </div>
             <div class="col-sm-4" style="padding: 5px;">
-              <button class="btn-block shadow-lg">
+              <button class="btn-block shadow-lg" id="mobilebuttonPadding">
                 <div routerLink="/portfolio">Portfolio</div>
               </button>
             </div>
             <div class="col-sm-4" style="padding: 5px;">
-              <button class="btn-block shadow-lg">
+              <button class="btn-block shadow-lg" id="mobilebuttonPadding">
                 <div routerLink="/resume">Resume</div>
               </button>
             </div>
@@ -72,6 +72,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- desktop view -->
     <div class="container-fluid" id="desktopHeader">
@@ -97,23 +98,21 @@
       </div>
     </div>
   </header>
-  <div id="desktopButtons" class="col-sm-12">
-    <div class="row">
-      <div class="col-sm-4" style="padding: 5px;">
-        <button class="btn-block shadow-lg" id="buttonpadding">
-          <div routerLink="/projects">Projects</div>
-        </button>
-      </div>
-      <div class="col-sm-4" style="padding: 5px;">
-        <button class="btn-block shadow-lg" id="buttonpadding">
-          <div routerLink="/portfolio">Portfolio</div>
-        </button>
-      </div>
-      <div class="col-sm-4" style="padding: 5px;">
-        <button class="btn-block shadow-lg" id="buttonpadding">
-          <div routerLink="/resume">Resume</div>
-        </button>
-      </div>
+  <div class="row">
+    <div class="col-sm" style="padding: 5px;" id="desktopButtons">
+      <button class="btn-block shadow-lg" id="buttonpadding">
+        <div routerLink="/projects">Projects</div>
+      </button>
+    </div>
+    <div class="col-sm" style="padding: 5px;" id="desktopButtons">
+      <button class="btn-block shadow-lg" id="buttonpadding">
+        <div routerLink="/portfolio">Portfolio</div>
+      </button>
+    </div>
+    <div class="col-sm" style="padding: 5px;" id="desktopButtons">
+      <button class="btn-block shadow-lg" id="buttonpadding">
+        <div routerLink="/resume">Resume</div>
+      </button>
     </div>
   </div>
   <hr>
@@ -139,10 +138,10 @@
         <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="120" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div class="row">
             <p>Steven went on to work at a civil engineering firm to expand his knowledge in other areas. These included street
-              and utility design, hillside design and construction and earthquake retrofitting. He then obtained
-              his general contracting license from the State of California and began operating his own architectural design
-              and construction company. The firm quickly grew to include the managing of employees, enigneers and construction
-              crews. Steven's firm successfully designed and completed over 700 projects.
+              and utility design, hillside design and construction and earthquake retrofitting. He then obtained his general
+              contracting license from the State of California and began operating his own architectural design and construction
+              company. The firm quickly grew to include the managing of employees, enigneers and construction crews. Steven's
+              firm successfully designed and completed over 700 projects.
             </p>
           </div>
         </div>
@@ -171,11 +170,13 @@
       </div>
     </div>
   </div>
-  <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in">
+
+  <!-- mobile footer -->
+  <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in" id="mobileFooter">
     <footer>
-      <hr>
       <p class="txt-railway">- Get In Touch -</p>
-      <div class="row">
+      <hr>
+      <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
         <div class="col-4">
           <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb"></a>
         </div>
@@ -188,6 +189,37 @@
       </div>
     </footer>
   </div>
+  <!-- end mobile footer -->
+
+  <!-- desktop footer -->
+  <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in" id="desktopFooter">
+    <footer>
+      <p class="txt-railway">- Get In Touch -</p>
+      <hr>
+      <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="col-4">
+          <div class="row" id="phoneEmail">
+            <h2 style="text-decoration: underline;">Phone</h2>
+          </div>
+          <div class="row" id="phoneEmail">
+            <h5>661-400-3507</h5>
+          </div>
+        </div>
+        <div class="col-4">
+            <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb"></a>
+          </div>
+        <div class="col-4">
+          <div class="row" id="phoneEmail">
+            <h2 style="text-decoration: underline;">Email</h2>
+          </div>
+          <div class="row" id="phoneEmail">
+            <h5>StevenMSaylor@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- end desktop footer -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

@@ -555,7 +555,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Volumes/JS/projects/steveWebsite/public/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! D:\projects\steveWebsite\public\src\styles.css */"./src/styles.css");
 
 
 /***/ })

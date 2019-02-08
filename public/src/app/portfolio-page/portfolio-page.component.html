@@ -264,23 +264,55 @@
       </div>
     </div>
   </div>
-  <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in">
+  <!-- mobile footer -->
+  <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in" id="mobileFooter">
+      <footer>
+        <p class="txt-railway">- Get In Touch -</p>
+        <hr>
+        <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+          <div class="col-4">
+            <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb"></a>
+          </div>
+          <div class="col-4">
+            <a href="mailto:StevenMSaylor@gmail.com" class="fa fa-google"></a>
+          </div>
+          <div class="col-4">
+            <a href="tel:661-400-3507" class="fa fa-phone" aria-hidden="true"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <!-- end mobile footer -->
+
+  <!-- desktop footer -->
+  <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in" id="desktopFooter">
     <footer>
-      <hr>
       <p class="txt-railway">- Get In Touch -</p>
-      <div class="row">
+      <hr>
+      <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
         <div class="col-4">
-          <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb"></a>
+          <div class="row" id="phoneEmail">
+            <h2 style="text-decoration: underline;">Phone</h2>
+          </div>
+          <div class="row" id="phoneEmail">
+            <h5>661-400-3507</h5>
+          </div>
         </div>
         <div class="col-4">
-          <a href="mailto:StevenMSaylor@gmail.com" class="fa fa-google"></a>
-        </div>
+            <a href="https://www.imdb.com/name/nm0768513/" class="fa fa-imdb"></a>
+          </div>
         <div class="col-4">
-        <a href="tel:661-400-3507" class="fa fa-phone" aria-hidden="true"></a>
+          <div class="row" id="phoneEmail">
+            <h2 style="text-decoration: underline;">Email</h2>
+          </div>
+          <div class="row" id="phoneEmail">
+            <h5>StevenMSaylor@gmail.com</h5>
+          </div>
         </div>
       </div>
     </footer>
   </div>
+  <!-- end desktop footer -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
